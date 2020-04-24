@@ -35,6 +35,7 @@ public class SIS_autofirmado {
     //ubicacion archivo de configuracion -> despues debe ir el classpath donde va ir el jar
    
     /*-ubicacion del archivo para local test y desde carpeta del instalable*/
+    //private static final String PATHSYSTEM = "C:/test/system.properties";
     private static final String PATHSYSTEM = System.getProperty("user.dir");
     private static final String NOMAPP = File.separator +"SISKey";
     private static final String SISCONFIG = "sis" + File.separator + "conf" + File.separator + "system" + File.separator + "system.properties";
@@ -47,7 +48,7 @@ public class SIS_autofirmado {
          //Gestion archivo de propiedad
         Properties prop = new Properties(System.getProperties());
         try {
-           FileInputStream propFile = new FileInputStream(PATHSYSTEM + File.separator + "conf" + File.separator + "system.properties");
+            FileInputStream propFile = new FileInputStream(PATHSYSTEM + File.separator + "conf" + File.separator + "system.properties");
             try {
               prop.load(propFile);
               log.info("Carga system.properties [OK]");
@@ -70,20 +71,21 @@ public class SIS_autofirmado {
             rutaK = ruta_keystore.toString();
             log.info("ruta JKS: "+sisFolder+rutaK);
             String pwd_keystore = arch_conf.getParam(KEYSTOREPASS);
+            //log.info("ruta JKS: " + rutaK);
             //log.debug(pwd_keystore);
             
             Certificado cert = new Certificado(pwd_keystore,sisFolder+rutaK); 
             cert.borrarAlias(cert.getNom1Alias());
+            //cert.setKeystore("ExperianAutoSign",cert.getCertAutofirmados("CN=EXPERIAN_Java,O=Experian,OU=Experian,L=CABA,ST=CABA,C=AR"));
             //Recupero Informacion del archivo de propiedad
             String alias = prop.getProperty("alias");
-            String bodykeystore = "CN="+prop.getProperty("CN")+",O="
-                                  +prop.getProperty("O")+",OU="
+            String bodyKeystore = "CN="+prop.getProperty("CN")+",0="
+                                  +prop.getProperty("O")+", OU="
                                   +prop.getProperty("OU")+",L="
                                   +prop.getProperty("L")+",ST="
                                   +prop.getProperty("ST")+",C="
                                   +prop.getProperty("C");
-            
-            cert.setKeystore(alias,cert.getCertAutofirmados(bodykeystore));
+            cert.setKeystore(alias,cert.getCertAutofirmados(bodyKeystore));
             
             pressAnyKeyToContinue();
             

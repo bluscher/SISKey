@@ -1,0 +1,208 @@
+[main] ERROR SISKey.SIS_autofirmado  - No se encuentra el archivo de propiedades {system.properites}.
+java.io.FileNotFoundException: C:\test\system.properties\conf\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:51)
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: c:test\system.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:71)
+[main] ERROR SISKey.SIS_autofirmado  - No se encuentra el archivo de propiedades {system.properites}.
+java.io.FileNotFoundException: c:test\conf\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:51)
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: c:test\system.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:72)
+[main] ERROR SISKey.SIS_autofirmado  - No se encuentra el archivo de propiedades {system.properites}.
+java.io.FileNotFoundException: C:test\conf\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:51)
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: c:test\system.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:72)
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: c:test\system.properties (El sistema no puede encontrar el archivo especificado)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:72)
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.SIS_autofirmado  - ruta JKS: C:/test/system.properties\sis\test\ib.jks
+[main] ERROR SISKey.Certificado  - error FileNotFound
+java.io.FileNotFoundException: C:\test\system.properties\sis\test\ib.jks (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at SISKey.Certificado.cargarKeystore(Certificado.java:178)
+	at SISKey.Certificado.<init>(Certificado.java:77)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:79)
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.SIS_autofirmado  - ruta JKS: C:/test/system.propertiesC:\test\ib.jks
+[main] ERROR SISKey.Certificado  - error FileNotFound
+java.io.FileNotFoundException: C:\test\system.propertiesC:\test\ib.jks (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at SISKey.Certificado.cargarKeystore(Certificado.java:178)
+	at SISKey.Certificado.<init>(Certificado.java:77)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:80)
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR SISKey.Certificado  - error el kestore no tiene certificado
+java.io.IOException: Keystore was tampered with, or password was incorrect
+	at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:785)
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:56)
+	at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224)
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:70)
+	at java.security.KeyStore.load(KeyStore.java:1445)
+	at SISKey.Certificado.cargarKeystore(Certificado.java:183)
+	at SISKey.Certificado.<init>(Certificado.java:77)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:81)
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+	at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:783)
+	... 7 more
+[main] ERROR SISKey.Certificado  - No existe ningun Alias
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.size(KeyStore.java:1269)
+	at SISKey.Certificado.getNom1Alias(Certificado.java:112)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:82)
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 1
+[main] INFO  SISKey.Certificado  - Nombre alias: lalala
+[main] INFO  SISKey.Certificado  - [Borrado exitoso] lalala
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 17753427355705190532190822994742130172144262847253437360820267348644963165332977696578720568690460269892532738447431712675703485676788965911244894671688917017829933436504694936282889175000448334302885838956222844540386179123686959526921177834879203841238178496858546178691696155042412723587390013063930744266884504194048426118513156516598159746739915524688175478147470170768318633084736305283994841660964700723466730379240577077587644488957974940195799927934332656116210344707250825563190812274283252943176964808719122076028883582311078672921033852606088813824088029218087307908718773776546259715068488745249717323069
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffe6c6e1
+[main] ERROR SISKey.Certificado  - error gral. 
+java.io.IOException: ObjectIdentifier() -- Must be at least two oid components 
+	at sun.security.util.ObjectIdentifier.checkCount(ObjectIdentifier.java:629)
+	at sun.security.util.ObjectIdentifier.<init>(ObjectIdentifier.java:203)
+	at sun.security.x509.AVAKeyword.getOID(AVA.java:1256)
+	at sun.security.x509.AVA.<init>(AVA.java:188)
+	at sun.security.x509.AVA.<init>(AVA.java:147)
+	at sun.security.x509.RDN.<init>(RDN.java:147)
+	at sun.security.x509.X500Name.parseDN(X500Name.java:916)
+	at sun.security.x509.X500Name.<init>(X500Name.java:163)
+	at sun.security.x509.X500Name.<init>(X500Name.java:150)
+	at SISKey.Certificado.crearX509(Certificado.java:268)
+	at SISKey.Certificado.getCertAutofirmados(Certificado.java:305)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:92)
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 1
+[main] INFO  SISKey.Certificado  - Nombre alias: prueba
+[main] INFO  SISKey.Certificado  - [Borrado exitoso] prueba
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 1
+[main] INFO  SISKey.Certificado  - Nombre alias: motor
+[main] INFO  SISKey.Certificado  - [Borrado exitoso] motor
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 19261194466277562120447138308351865069586567384503397010718282805506096932851511227564237015682508140088939428427916123387256614579696120311318838558339172702296767994800862125322562403130199969111904867236603103907282207517687635568246007794423085081921641804689231385755785920211285016918537837741717275325488113836190536102136220178632687628192546140962694919197083246145587261563890619221578794245492160040133606810693884194583328023712439488354507823985986533050908177357930685298353968323825067167160080547752910439820853747298862800254022039711067577194856707339887644772972604988758221024739291630842929967699
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffef7c75
+[main] INFO  SISKey.Certificado  - creacion certificado X509 [OK]
+[main] INFO  SISKey.Certificado  - Guardado nuevo Certificado en Keystore: c://test/ib.jks [OK] 
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 1
+[main] INFO  SISKey.Certificado  - Nombre alias: experianautosign
+[main] INFO  SISKey.Certificado  - [Borrado exitoso] experianautosign
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 18570579950482800877371814099839428020683809980549830013289653175870127521454258890874574426778751354460768818309757670405947320021930392156665230584178466066216099465391862650497995845244651146839713804448118724101611399922833115490956475054418199563001030247019081697615378347266593695618159003120100831745033208807538806451158555533357814950365202427789142220382128163760358998670448002883391666647283926511966694262183565187407226684021241760231464135543883090992218558285753025492483461681749123011128445407479355365692603207684624619645019040560012213351690193668899090073283991874899653768900520797882839703301
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@dbcd1
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 19822202643408842483855857373182138522461554689732678039961008801921907269988506841375177838235472413852162801966765338906072205001192550448604958860877142816170473927032576467755500029766471840875714249519204710564151641986575012758224140797279577305008176884709231261896688792774943671168478648434961114629369551467835674434769617978812691593790986866970339479907891213267665163855330760818132369764437446012445262083869251746887382850875895360918095330265627307943680666439598993567740290369147579236245516699850798236903590589229437169260790272845649351170858038905046966167645809210988562818107290548896634382559
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffdae8fd
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 17952539709067268465480869655093313432799990868615920448635815863383367009035469115079017246182666026527362995647718407582154688911256737417644692617489733574740938504095720063922600307352289387837475523995118178301056686178795946891259769936424259768196075607049825930115888181855833185958647706036945305716555171448041419976314514771515387632978226032748169793000774460166472059064874388874815172295132752268021147241351328802454450911376451445271141328254990879568077074277568988800988275708235294689405770111919244760034736057666175456414794431446860952553111681496694009796740624664098696064793393758718967688263
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@4f862
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 21208601465063947907336564055348475865204237354808839831500068752992422392196888697394130079446504292595451194943155124825102955924567821689051815152611559687647918849883481728546555731805807985918473638219566444704848777235894128913198927751075666134475083806075411787068818679617114495913603749643179033650166595535424831232952548046258230661959587503629313947615201623745175956702782755023901710323739349833223108752125652166791464672823790832085733166980073540734027224160321655325413061930624868616630273653704530779902496012809706553906093176295672215386486529492556284061921351734214424539860413683081373739457
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffe8daac
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 20128928455541938285482887920461917862940784215335896017135145415616321305573278474710236032376551132987796166385776943632654439310326431642437316993014952224790947676289363051980935456972817915749520692224473566056100396245683867095169832992005457549074081049674667364523658366495260714923786745386925365032074395900269887455396918297670987252874725527932338344996613068763171462798912034218994464913739327543664651015588291482894632292211374896073121361615971047523680994763099411280717043534679289363516975053928750258958958292354325085555262256176607041750791793197944503182807566328298915750362808370121590935323
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@98674
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 22265707504795832099440756933525127512658184909716901511334366694005888507861530241084318391540780088079100455589684399770656638626802594427276733052546868638219723519811086908587528976304818716533203363685631590469407468641776586480834250104315103751936831054196178410064316157064742493017447747370542062030172861205116502316781424176668346412929049670869445498897098615990755142592121191802426372990772153117412511541572552447517512662912001310162512136574986841686406432465704646161277751122591888792131980574319551391641282224439156921198508165856541524203539960806188534171445729368469294791447167337319121794433
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffced9c7
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 22436139521880074707838645549677101057822163454871967101820026337920300911350972939198048440848627528860393379938878066520396074235939070658591646022515317643094390256430881133041028855472147540227382386685037719555165861306812766135708602584457473211993373837131888050128711362892218276653891010833002561362472684458603222784304849529899712523892197217822377042119784408153042150989657650880786538638337349381200350201317253803728571828210524350222828222624723354208038482257212309222532030668833034354289845646427882066277531683557599725749148473210451872807027077190463117043204161242634149999322083257472020666669
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffea6a0a
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  SISKey.Certificado  - Keystore cargado [OK]
+[main] INFO  SISKey.Certificado  - El numero de alias es : 0
+[main] INFO  SISKey.Certificado  - No hubo Borrado:Ningun Alias
+[main] INFO  SISKey.Certificado  - llave publica: Sun RSA public key, 2048 bits
+  modulus: 27981603101098247072084163561080613649733132410369114687829834501751010824929125197228771062726626159518733479521276802461790612481520670588367961496196273300949172841265387183719592934566676119432591599495275247920486045502982312691959448050107525380991104081060002494733809597229213390607155272547241166162751072155641991246710288423623842003090316900019596259069632844708204831873881254836807714853931718336864461844707491293286638957787698366497076950673186592903634185801054760619020705478774814124816319560587484529348786798395537471976416276566337595178669547748976355701054074954475181314753721139159449190439
+  public exponent: 65537
+[main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffee41ba
+[main] INFO  SISKey.Certificado  - creacion certificado X509 [OK]
+[main] INFO  SISKey.Certificado  - Guardado nuevo Certificado en Keystore: c://test/ib.jks [OK] 
