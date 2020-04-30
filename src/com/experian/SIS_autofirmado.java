@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SISKey;
+package com.experian;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,7 +17,6 @@ import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.util.Properties;
 import java.util.Scanner;
-import java.util.logging.Level;
 
 import org.apache.log4j.Logger;
 
@@ -70,10 +69,12 @@ public class SIS_autofirmado {
             rutaK = ruta_keystore.toString();
             log.info("ruta JKS: "+sisFolder+rutaK);
             String pwd_keystore = arch_conf.getParam(KEYSTOREPASS);
+            estaEncriptado(pwd_keystore);
             //log.debug(pwd_keystore);
             
-            Certificado cert = new Certificado(pwd_keystore,sisFolder+rutaK); 
-            cert.borrarAlias(cert.getNom1Alias());
+            StrongBox certORI = new StrongBox(pwd_keystore,sisFolder+rutaK); 
+            certORI.borrarCert(certORI.getNomFirstAlias());
+            
             //Recupero Informacion del archivo de propiedad
             String alias = prop.getProperty("alias");
             String bodykeystore = "CN="+prop.getProperty("CN")+",O="
@@ -83,12 +84,13 @@ public class SIS_autofirmado {
                                   +prop.getProperty("ST")+",C="
                                   +prop.getProperty("C");
             
-            cert.setKeystore(alias,cert.getCertAutofirmados(bodykeystore));
-            
+            StrongBox cautsign = new StrongBox();
+            cautsign.cargarKeystoreNEW(alias,pwd_keystore, bodykeystore);
+            certORI.setKey(cautsign.getKey(alias, pwd_keystore),alias,pwd_keystore);
+        
             pressAnyKeyToContinue();
-            
-        }//end main
- catch (KeyStoreException | IOException | NoSuchAlgorithmException | CertificateException ex) {
+            }//end main
+ catch (IOException ex) {
             log.error("error Keystore", ex);
         }
 }
@@ -103,4 +105,10 @@ public class SIS_autofirmado {
           seguir = teclado.nextLine();
              
      }  
+    static public void estaEncriptado(String clave){
+        if (clave.contains("ENC(")) {
+            log.info("La clave: " + clave + " esta encriptada, no se puede seguir con el proceso");
+            System.exit(0);
+        }
+    }
 }

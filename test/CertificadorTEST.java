@@ -5,7 +5,7 @@
  */
 package JKSinjector;
 
-import SISKey.Certificado;
+import com.experian.StrongBox;
 
 
 /**
@@ -27,7 +27,7 @@ public class CertificadorTEST {
     
      
         
-     Certificado cr = new Certificado(PASSWORD,ARCHIVO);
+     StrongBox cr = new StrongBox(PASSWORD,ARCHIVO);
      cr.mostrarAliases();
     // cr.borrarAlias("larbshwzpxf2");
     

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SISKey;
+package com.experian;
 
 import java.io.File;
 import java.io.IOException;
@@ -73,7 +73,6 @@ public class Carpeta {
     }
     
     public String getServiceConfig(String nom){
-        rutaProyecto = "c://test/DAS"; // ####para pruebas local###
         File f = new File(rutaProyecto);
         String[] listarArchivos = f.list(new FiltroContenido(nom));
         if (listarArchivos.length == 0) {
@@ -83,22 +82,4 @@ public class Carpeta {
         return rutaProyecto + "/"+ listarArchivos[0] + File.separator + "conf" + File.separator + "com.eda.crypto.cfg";
     }
     
-    
-    /*#viejo#*/
-    public void convertirCertificado() throws IOException, KeyStoreException, CertificateException, NoSuchAlgorithmException{
-        //Certificado ca = new Certificado(pwd_keystore, p.toString()+this.getNombreFile());  
-        File f = this.path.toFile();
-        String[] listaArchivos = f.list(new FiltroExtension(".jks"));
-        System.out.println("Archivo: "+listaArchivos[0]);
-        System.out.println("Ingresar la clave del certificado seguido de la tecla -ENTER-");
-        Scanner teclado = new Scanner(System.in);
-        String pwd_keystore = teclado.nextLine();
-        String nameExt = listaArchivos[0];
-        //quitar todos los caracteres incluido el punto y lo que sigue
-        String nameCorto = nameExt.split("\\.",2)[0];
-        Certificado ca = new Certificado(pwd_keystore,f.getAbsolutePath()+"/"+listaArchivos[0]);
-        ca.toPKCS12(nameCorto); 
-        log.info(" Conversion [Exitosa]");
-        
-    }
 }

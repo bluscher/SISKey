@@ -206,3 +206,21 @@ java.io.IOException: ObjectIdentifier() -- Must be at least two oid components
 [main] INFO  SISKey.Certificado  - llave privada: sun.security.rsa.RSAPrivateCrtKeyImpl@ffee41ba
 [main] INFO  SISKey.Certificado  - creacion certificado X509 [OK]
 [main] INFO  SISKey.Certificado  - Guardado nuevo Certificado en Keystore: c://test/ib.jks [OK] 
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Users\e10934a\Documents\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:68)
+[main] INFO  SISKey.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR SISKey.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Users\e10934a\Documents\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at SISKey.Archivo.getParamExt(Archivo.java:108)
+	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:68)

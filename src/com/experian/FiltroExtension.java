@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SISKey;
+package com.experian;
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -12,16 +12,16 @@ import java.io.FilenameFilter;
  *
  * @author e10934a
  */
-public class FiltroContenido  implements FilenameFilter{
-    private String contenido;
-    
-    public FiltroContenido(String c) {
-        this.contenido = c;        
-    }
+public class FiltroExtension implements FilenameFilter{
+    String extension;
 
+    public FiltroExtension(String ext) {
+        this.extension = ext;
+    }
+      
     @Override
-    public boolean accept(File file, String string) {
-        return string.contains(contenido);
+    public boolean accept(File dir, String name) {
+        return name.endsWith(extension);
     }
     
 }
