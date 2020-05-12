@@ -6,12 +6,7 @@
 package com.experian;
 
 import java.io.File;
-import java.io.IOException;
 import java.nio.file.Path;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
-import java.util.Scanner;
 import org.apache.log4j.Logger;
 
 /**
@@ -20,9 +15,10 @@ import org.apache.log4j.Logger;
  */
 public class Carpeta {
     private static final Logger log = Logger.getLogger(Carpeta.class.getName());
-    //static final String pwd_keystore = "Miclave.1";
     private String rutaProyecto;
     private Path path;
+    private static final String NOMAPP = File.separator +"SISKey";
+    private static final String PATHSYSTEM = System.getProperty("user.dir");
 
   
     public Carpeta(Path ruta){
@@ -39,20 +35,21 @@ public class Carpeta {
     }
     
     public Carpeta(){
-        rutaProyecto = System.getProperty("user.dir");
+        rutaProyecto = PATHSYSTEM.replaceAll(NOMAPP, "");
+        //log.info("Ruta de la carpeta: " +rutaProyecto);
     }
     
     //Verifica si en la carpeta Input tiene un certificado y lo obtiene el primero.
     public File getCertFile(){
-        File carpeta = new File(rutaProyecto + File.separator +"Input"+File.separator);
+        File carpeta = new File(PATHSYSTEM + File.separator +"input"+File.separator);
         File[] listaf = carpeta.listFiles();
-        
+ 
         if (carpeta.exists() && listaf.length <= 1) {
             File aux = listaf[0];
             log.info("ruta archivo y nombre: "+aux.getPath() + " | " + aux.getName());
             return aux;
         }else
-            log.info("No hay certificado en la carpeta.");
+            log.info("No hay certificado en la carpeta input");
             return null;       
     }
     

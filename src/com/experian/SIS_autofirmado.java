@@ -34,7 +34,6 @@ public class SIS_autofirmado {
     private static final String PATHSYSTEM = System.getProperty("user.dir");
     private static final String NOMAPP = File.separator +"SISKey"; 
     //##MEJORA###  linea 35 :: que tome el nombre de la carpeta dinamicamente y no dejarlo hardcodeado
-    
     private static final String SISCONFIG = "sis" + File.separator + "conf" + File.separator + "system" + File.separator + "system.properties";
     private static final Logger log = Logger.getLogger(SIS_autofirmado.class.getName());
 
@@ -57,7 +56,7 @@ public class SIS_autofirmado {
             log.error("No se encuentra el archivo de propiedades {system.properites}.", ex);
         }
        
-        
+        String pathCA ="";
         String rutaK ="";
         String sisFolder = PATHSYSTEM.replaceAll(NOMAPP, "");
         try {
@@ -66,13 +65,14 @@ public class SIS_autofirmado {
                 
             Path ruta_keystore = arch_conf.getPath(arch_conf.getParamExt(KEYSTOREPATH));
             rutaK = ruta_keystore.toString();
-           // log.info("ruta JKS: "+sisFolder+rutaK);
+            log.info("ruta JKS: "+sisFolder+rutaK);
             String pwd_keystore = arch_conf.getParam(KEYSTOREPASS);
             estaEncriptado(pwd_keystore);
-           //log.info(pwd_keystore);
+            log.info(pwd_keystore);
             
-            StrongBox certORI = new StrongBox(pwd_keystore,sisFolder+rutaK); 
-            certORI.borrarCert(certORI.getNomFirstAlias());
+            StrongBox certORI = new StrongBox(pwd_keystore,sisFolder+rutaK);
+            String nomAliasORI = certORI.getNomFirstAlias();
+            certORI.borrarCert(nomAliasORI);
             
             //Recupero Informacion del archivo de propiedad
             String alias = prop.getProperty("alias");
@@ -83,9 +83,25 @@ public class SIS_autofirmado {
                                   +prop.getProperty("ST")+",C="
                                   +prop.getProperty("C");
             
+            Carpeta input = new Carpeta();
+            File ca = input.getCertFile();
+            if (ca == null) {
             StrongBox cautsign = new StrongBox();
             cautsign.cargarKeystoreNEW(alias,pwd_keystore, bodykeystore);
-            certORI.setKey(cautsign.getKey(alias, pwd_keystore),alias,pwd_keystore);
+            certORI.setKey(cautsign.getKey(alias, pwd_keystore),alias,pwd_keystore);    
+            //pathCA = ca.getAbsolutePath();
+            }else{
+                pathCA = ca.getAbsolutePath();
+                System.out.println ("Por favor introduzca la clave del archivo: "+ca.toString());
+                System.out.print("Password: ");
+                String pwdCA = "";
+                Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
+                pwdCA = entradaEscaner.nextLine ();
+                StrongBox caStore = new StrongBox(pwdCA, pathCA);
+                certORI.borrarCert(nomAliasORI);
+                certORI.setKey(caStore.getKey(caStore.getNomFirstAlias(), pwdCA), nomAliasORI, pwd_keystore);
+            }
+            
      
             pressAnyKeyToContinue();
             }//end main
