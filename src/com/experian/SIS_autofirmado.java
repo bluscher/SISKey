@@ -12,9 +12,6 @@ import java.io.IOException;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.cert.CertificateException;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -35,7 +32,9 @@ public class SIS_autofirmado {
    
     /*-ubicacion del archivo para local test y desde carpeta del instalable*/
     private static final String PATHSYSTEM = System.getProperty("user.dir");
-    private static final String NOMAPP = File.separator +"SISKey";
+    private static final String NOMAPP = File.separator +"SISKey"; 
+    //##MEJORA###  linea 35 :: que tome el nombre de la carpeta dinamicamente y no dejarlo hardcodeado
+    
     private static final String SISCONFIG = "sis" + File.separator + "conf" + File.separator + "system" + File.separator + "system.properties";
     private static final Logger log = Logger.getLogger(SIS_autofirmado.class.getName());
 
@@ -60,17 +59,17 @@ public class SIS_autofirmado {
        
         
         String rutaK ="";
-        FileSystem sistemaFicheros = FileSystems.getDefault();
         String sisFolder = PATHSYSTEM.replaceAll(NOMAPP, "");
         try {
             //---Manipulacion archivo config del SIS
-            Archivo arch_conf = new Archivo(sisFolder + SISCONFIG);
+            Archivo arch_conf = new Archivo(sisFolder + File.separator + SISCONFIG);
+                
             Path ruta_keystore = arch_conf.getPath(arch_conf.getParamExt(KEYSTOREPATH));
             rutaK = ruta_keystore.toString();
-            log.info("ruta JKS: "+sisFolder+rutaK);
+           // log.info("ruta JKS: "+sisFolder+rutaK);
             String pwd_keystore = arch_conf.getParam(KEYSTOREPASS);
             estaEncriptado(pwd_keystore);
-            //log.debug(pwd_keystore);
+           //log.info(pwd_keystore);
             
             StrongBox certORI = new StrongBox(pwd_keystore,sisFolder+rutaK); 
             certORI.borrarCert(certORI.getNomFirstAlias());
@@ -87,7 +86,7 @@ public class SIS_autofirmado {
             StrongBox cautsign = new StrongBox();
             cautsign.cargarKeystoreNEW(alias,pwd_keystore, bodykeystore);
             certORI.setKey(cautsign.getKey(alias, pwd_keystore),alias,pwd_keystore);
-        
+     
             pressAnyKeyToContinue();
             }//end main
  catch (IOException ex) {
