@@ -43,8 +43,10 @@ public class Carpeta {
     public File getCertFile(){
         File carpeta = new File(PATHSYSTEM + File.separator +"input"+File.separator);
         File[] listaf = carpeta.listFiles();
- 
-        if (carpeta.exists() && listaf.length <= 1) {
+      //  log.debug("existe la carpeta? "+carpeta.exists());
+      //  log.debug("tamaño lista: "+listaf.length);
+        
+        if (carpeta.exists() && listaf.length >= 1) {
             File aux = listaf[0];
             log.info("ruta archivo y nombre: "+aux.getPath() + " | " + aux.getName());
             return aux;
