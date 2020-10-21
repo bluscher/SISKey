@@ -11,22 +11,26 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintStream;
 import java.security.InvalidKeyException;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 import java.security.PrivateKey;
+import java.security.Signature;
 import java.security.SignatureException;
 import java.security.UnrecoverableEntryException;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.Enumeration;
+import javax.xml.bind.DatatypeConverter;
 import org.apache.log4j.Logger;
 import sun.security.tools.keytool.CertAndKeyGen;
 import sun.security.x509.X500Name;
 import sun.security.tools.keytool.*;
+import sun.security.pkcs10.PKCS10;
 
 
 /**
@@ -129,7 +133,7 @@ public final class StrongBox {
         }
     } 
     
-    //----------prueba con array de certificado y otra libreria----------------
+    /*----------prueba con array de llave publica y privada  de otra libreria----------------
     public void cargarKeystoreNEW(String alias,String password, String bodyCert) {
         try {
             CertAndKeyGen keyGen = new CertAndKeyGen("RSA", ALGORITHM, null);
@@ -159,7 +163,7 @@ public final class StrongBox {
         catch (NoSuchAlgorithmException | NoSuchProviderException ex) {
             log.error(ex);
         }
-    }
+    } */
     
     public KeyStore cargarKeystore(String pwd, File pathKS){
         try{
@@ -281,4 +285,45 @@ public final class StrongBox {
         return null;
     }
     
-}//end certificado
+    public void newKeystore(String alias,String password, String bodyCert) {
+        try {
+            CertAndKeyGen keyGen = new CertAndKeyGen("RSA", ALGORITHM, null);
+            try {
+                keyGen.generate(KEY_LEN);
+                PrivateKey pk = keyGen.getPrivateKey();
+                X509Certificate cert;
+                cert = keyGen.getSelfCertificate(new X500Name(bodyCert), (long) 365 * 24 * 60 * 60);
+                X509Certificate[] chain = new X509Certificate[1];
+                chain[0]= cert;
+                //creo el request PKCS10
+                PKCS10  certreq = new PKCS10 (keyGen.getPublicKey());
+                Signature signature = Signature.getInstance(ALGORITHM);
+                signature.initSign(pk);
+                certreq.encodeAndSign(new X500Name(bodyCert), signature);
+                //-creo el archivo CSR-
+                FileOutputStream filereq = new FileOutputStream("C:\\test\\certreq.csr");
+                PrintStream ps = new PrintStream(filereq);
+                certreq.print(ps);
+                ps.close();
+                filereq.close();
+                
+                
+                this.ks = KeyStore.getInstance("JKS");
+                this.ksPass = password.toCharArray();
+                //try (FileOutputStream newkeystore = new FileOutputStream(OUTPUTKEYSTORE_PATH)) {
+                try (FileOutputStream newkeystore = new FileOutputStream("C:\\test\\newKeystore.jks")) {
+                    ks.load(null,null);
+                    ks.setKeyEntry(alias, pk, ksPass, chain);
+                    ks.store(newkeystore, ksPass);
+                }
+                 } catch (InvalidKeyException | IOException | CertificateException | SignatureException | KeyStoreException ex) {
+                log.error(ex);
+                 }
+                
+            } 
+        catch (NoSuchAlgorithmException | NoSuchProviderException ex) {
+            log.error(ex);
+        }
+    }
+    
+}//end StrongBox

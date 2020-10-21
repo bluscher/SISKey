@@ -9,8 +9,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.nio.file.FileSystem;
-import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.util.Properties;
 import java.util.Scanner;
@@ -20,6 +18,7 @@ import org.apache.log4j.Logger;
 /**
  *
  * @author e10934a
+ * @version 1.0
  */
 
 
@@ -29,7 +28,7 @@ public class SIS_autofirmado {
     private static final String KEYSTOREPATH = "jetty.keyStore.file";
     private static final String KEYSTOREPASS = "jetty.keyStore.password";
     //ubicacion archivo de configuracion -> despues debe ir el classpath donde va ir el jar
-   
+    
     /*-ubicacion del archivo para local test y desde carpeta del instalable*/
     private static final String PATHSYSTEM = System.getProperty("user.dir");
     private static final String NOMAPP = File.separator +"SISKey"; 
@@ -58,11 +57,21 @@ public class SIS_autofirmado {
        
         String pathCA ="";
         String rutaK ="";
-        String sisFolder = PATHSYSTEM.replaceAll(NOMAPP, "");
-        try {
+        //String sisFolder = PATHSYSTEM.replaceAll(NOMAPP, "");
+        String sisFolder = "C:\\test"; /*para test local*/
+        String alias = prop.getProperty("alias");
+        String bodykeystore = "CN="+prop.getProperty("CN")+",O="
+                                  +prop.getProperty("O")+",OU="
+                                  +prop.getProperty("OU")+",L="
+                                  +prop.getProperty("L")+",ST="
+                                  +prop.getProperty("ST")+",C="
+                                  +prop.getProperty("C");
+        StrongBox cautsign = new StrongBox();
+        cautsign.newKeystore(alias,"ib.jks", bodykeystore);
+        
+        /*try {
             //---Manipulacion archivo config del SIS
-            Archivo arch_conf = new Archivo(sisFolder + File.separator + SISCONFIG);
-                
+            Archivo arch_conf = new Archivo(sisFolder + File.separator + SISCONFIG); 
             Path ruta_keystore = arch_conf.getPath(arch_conf.getParamExt(KEYSTOREPATH));
             rutaK = ruta_keystore.toString();
             log.info("ruta JKS: "+sisFolder+rutaK);
@@ -107,7 +116,7 @@ public class SIS_autofirmado {
             }//end main
  catch (IOException ex) {
             log.error("error Keystore", ex);
-        }
+        }*/
 }
    
     //metodo para pausar ventana esperando interaccion con usuario

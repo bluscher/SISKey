@@ -224,3 +224,117 @@ java.io.FileNotFoundException: C:\Users\e10934a\Documents\NetBeansProjects\sis\c
 	at java.io.FileReader.<init>(FileReader.java:72)
 	at SISKey.Archivo.getParamExt(Archivo.java:108)
 	at SISKey.SIS_autofirmado.main(SIS_autofirmado.java:68)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:test\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:64)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\test\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - ib.jks
+[main] INFO  com.experian.StrongBox  - El numero de alias es : 1
+[main] INFO  com.experian.StrongBox  - Nombre alias: mykey
+[main] INFO  com.experian.Carpeta  - ruta archivo y nombre: C:\Experian\NetBeansProjects\SISKey\input\certificate.crt | certificate.crt
+[main] ERROR com.experian.StrongBox  - Error con el KeyStore: 
+java.io.IOException: Invalid keystore format
+	at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:663)
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:56)
+	at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224)
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:70)
+	at java.security.KeyStore.load(KeyStore.java:1445)
+	at com.experian.StrongBox.cargarKeystore(StrongBox.java:202)
+	at com.experian.StrongBox.<init>(StrongBox.java:62)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:99)
+[main] ERROR com.experian.StrongBox  - No existe ningun Alias
+java.security.KeyStoreException: Uninitialized keystore
+	at java.security.KeyStore.size(KeyStore.java:1269)
+	at com.experian.StrongBox.getNomFirstAlias(StrongBox.java:95)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:101)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.StrongBox  - java.io.FileNotFoundException: C:\test
+ewKeystore.jks (El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
