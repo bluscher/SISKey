@@ -52,6 +52,7 @@ public class Carpeta {
             return aux;
         }else
             log.info("No hay certificado en la carpeta input");
+            System.out.println("No hay certificado en la carpeta input");
             return null;       
     }
     

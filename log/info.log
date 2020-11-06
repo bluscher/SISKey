@@ -338,3 +338,199 @@ ewKeystore.jks (El nombre de archivo, el nombre de directorio o la sintaxis de l
 [main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
 [main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
 [main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] ERROR com.experian.SIS_autofirmado  - error Keystore
+java.io.FileNotFoundException: C:\Experian\NetBeansProjects\sis\conf\system\system.properties (El sistema no puede encontrar la ruta especificada)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at com.experian.Archivo.getParamExt(Archivo.java:108)
+	at com.experian.SIS_autofirmado.main(SIS_autofirmado.java:79)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - ib.jks
+[main] INFO  com.experian.StrongBox  - El numero de alias es : 1
+[main] INFO  com.experian.StrongBox  - Nombre alias: my_siskey
+[main] ERROR com.experian.StrongBox  - java.io.FileNotFoundException: C:\test\sis\key\jetty\ib.jks (El sistema no puede encontrar la ruta especificada)
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.StrongBox  - El numero de alias es : 1
+[main] INFO  com.experian.StrongBox  - Nombre alias: my_siskey
+[main] INFO  com.experian.SIS_autofirmado  - Se genero el nuevo certificado autofirmado: CN=SIS_tet_Luscher,O=Experian,OU=Experian,L=CABA,ST=CABA,C=AR
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.StrongBox  - El numero de alias es : 1
+[main] INFO  com.experian.StrongBox  - Nombre alias: alias
+[main] INFO  com.experian.SIS_autofirmado  - Se genero el nuevo certificado autofirmado: 
+alias: alias
+source: CN=SIS_tet_Luscher,O=Experian,OU=Experian,L=CABA,ST=CABA,C=AR
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.StrongBox  - El numero de alias es : 1
+[main] INFO  com.experian.StrongBox  - Nombre alias: alias
+[main] INFO  com.experian.SIS_autofirmado  - Nuevo certificado autofirmado: 
+alias: alias
+source: CN=SIS_tet_Luscher,O=Experian,OU=Experian,L=CABA,ST=CABA,C=AR
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.Carpeta  - No hay certificado en la carpeta input
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.Carpeta  - ruta archivo y nombre: C:\Experian\NetBeansProjects\SISKey\input\l03i-pwcvsis-l02.dev.cer | l03i-pwcvsis-l02.dev.cer
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.Carpeta  - ruta archivo y nombre: C:\Experian\NetBeansProjects\SISKey\input\l03i-pwcvsis-l02.dev.cer | l03i-pwcvsis-l02.dev.cer
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.Carpeta  - ruta archivo y nombre: C:\Experian\NetBeansProjects\SISKey\input\l03i-pwcvsis-l02.dev.cer | l03i-pwcvsis-l02.dev.cer
+[main] INFO  com.experian.StrongBox  - Inserto certifica CA: [
+[
+  Version: V3
+  Subject: CN=l03i-pwcvsis-l02.dev, OU=Infraestructura Servicios Regionales CAM, O=Banco Davivienda S.A, L=Bogota, ST=Bogota, C=CO
+  Signature Algorithm: SHA256withRSA, OID = 1.2.840.113549.1.1.11
+
+  Key:  Sun RSA public key, 2048 bits
+  params: null
+  modulus: 21236759423313345735134583064923895664915723336827688595661991621856574716686909714500597228522837731406750307810762144462745973752029400251193081849348246364342695211195148636741782801768937180755619920073448294237417367701643719698248965223335166432407659916820483664869541540698892802813663545205309986752837410899406677937058689917466045495844502527869181371004948109902385027909133924131203578453707212165435590257046641619684570104818777957530326500889403564267012418670591960328786043351088026786011606475894153712907466598788280130240658310574179380197419840672338817784866357598946773800844142287486466831211
+  public exponent: 65537
+  Validity: [From: Fri Oct 23 20:21:59 ART 2020,
+               To: Sat Oct 23 20:21:59 ART 2021]
+  Issuer: CN=CA Subordinada DAVIVIENDA, OU=Administracion Seguridad TI, O=Banco Davivienda S.A, L=Bogota D.C, ST=Bogota D.C, DC=davivienda, DC=loc, C=CO
+  SerialNumber: [    3386ea2e 00020000 0bdb]
+
+Certificate Extensions: 8
+[1]: ObjectId: 1.2.840.113549.1.9.15 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 37 30 35 30 0E 06 08   2A 86 48 86 F7 0D 03 02  .7050...*.H.....
+0010: 02 02 00 80 30 0E 06 08   2A 86 48 86 F7 0D 03 04  ....0...*.H.....
+0020: 02 02 00 80 30 07 06 05   2B 0E 03 02 07 30 0A 06  ....0...+....0..
+0030: 08 2A 86 48 86 F7 0D 03   07                       .*.H.....
+
+
+[2]: ObjectId: 1.3.6.1.4.1.311.21.10 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 34 30 32 30 0A 06 08   2B 06 01 05 05 07 03 01  .4020...+.......
+0010: 30 0A 06 08 2B 06 01 05   05 07 03 02 30 0A 06 08  0...+.......0...
+0020: 2B 06 01 05 05 07 03 04   30 0C 06 0A 2B 06 01 04  +.......0...+...
+0030: 01 82 37 0A 03 04                                  ..7...
+
+
+[3]: ObjectId: 1.3.6.1.4.1.311.21.7 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 30 30 2E 06 26 2B 06   01 04 01 82 37 15 08 83  .00..&+.....7...
+0010: FA B8 7F 83 B9 E5 46 85   A5 81 1F 84 DB F9 7E 83  ......F.........
+0020: 8D F6 28 0D 85 F9 AE 10   85 A9 BB 6E 02 01 64 02  ..(........n..d.
+0030: 01 05                                              ..
+
+
+[4]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 4C 33 3A F2 B6 ED E8 4E   F5 C6 76 2C E2 EC C6 3A  L3:....N..v,...:
+0010: 97 E1 0A E3                                        ....
+]
+]
+
+[5]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [URIName: ldap:///CN=CA%20Subordinada%20DAVIVIENDA,CN=SADGVCERT01A,CN=CDP,CN=Public%20Key%20Services,CN=Services,CN=Configuration,DC=davivienda,DC=loc?certificateRevocationList?base?objectClass=cRLDistributionPoint]
+]]
+
+[6]: ObjectId: 2.5.29.37 Criticality=false
+ExtendedKeyUsages [
+  serverAuth
+  clientAuth
+  emailProtection
+  1.3.6.1.4.1.311.10.3.4
+]
+
+[7]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  DigitalSignature
+  Key_Encipherment
+]
+
+[8]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 42 5B 4A 52 DE B7 2D 08   47 64 30 A7 32 B5 EC 28  B[JR..-.Gd0.2..(
+0010: 1C 13 D5 E7                                        ....
+]
+]
+
+]
+  Algorithm: [SHA256withRSA]
+  Signature:
+0000: 36 04 5A FF A2 58 4B 6C   36 56 02 77 51 B9 15 E9  6.Z..XKl6V.wQ...
+0010: EC D6 14 4F CE E0 D4 2B   00 88 6E 18 C3 33 8A 88  ...O...+..n..3..
+0020: E4 1E A7 E7 04 6E BE D6   93 BB 77 25 29 E2 35 C0  .....n....w%).5.
+0030: 1A 04 A9 75 44 37 AD B0   C8 3A 5B 28 18 EC 06 1B  ...uD7...:[(....
+0040: 17 9A EC E0 86 D4 26 84   67 31 E7 F8 8F 79 E0 D6  ......&.g1...y..
+0050: 8C A3 94 49 DF A2 B5 F9   F2 2E B1 E6 9E 7C C3 5E  ...I...........^
+0060: 2B 97 BE 6B 55 96 EA 37   F7 43 0D 9F 3E 18 5F D8  +..kU..7.C..>._.
+0070: C4 4A 26 2D CD 24 BA 88   7D EA AD 7C E1 F9 25 3F  .J&-.$........%?
+0080: 90 07 66 41 7C 61 2E A8   C5 A7 AF 7A 5C A8 0A 31  ..fA.a.....z\..1
+0090: 50 5E A4 F6 10 41 0C 5E   2A 58 CA 93 62 EF B5 DC  P^...A.^*X..b...
+00A0: AF F1 FD E4 3C 43 FC DB   DA DF DE 00 30 DA 4C 0F  ....<C......0.L.
+00B0: 57 D3 A0 BA 62 DC 48 0E   82 8D 2C FA 66 A3 2A 50  W...b.H...,.f.*P
+00C0: 91 75 61 C7 D2 50 80 C3   DE 59 B2 B6 73 33 21 A6  .ua..P...Y..s3!.
+00D0: 9F B2 D4 1E AA 91 F9 1A   9C 5C 5C 21 F9 38 86 0D  .........\\!.8..
+00E0: 3E E2 84 1A 87 32 E5 96   68 D5 E7 0C CB 17 D6 D2  >....2..h.......
+00F0: F8 9B B9 BE 55 E8 05 61   B0 73 C5 F8 17 E9 67 46  ....U..a.s....gF
+
+]
+[main] INFO  com.experian.StrongBox  - Keystore actualizado: OK
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.Carpeta  - ruta archivo y nombre: C:\Experian\NetBeansProjects\SISKey\input\l03i-pwcvsis-l02.dev.cer | l03i-pwcvsis-l02.dev.cer
+[main] INFO  com.experian.StrongBox  - Keystore actualizado: OK
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - Carga system.properties [OK]
+[main] INFO  com.experian.SIS_autofirmado  - ruta JKS: C:\Experian\NetBeansProjects\\sis\key\jetty\ib.jks
+[main] INFO  com.experian.SIS_autofirmado  - clave JKS: ib.jks
