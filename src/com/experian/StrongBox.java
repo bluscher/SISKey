@@ -30,7 +30,6 @@ import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 import java.security.cert.X509Certificate;
 import java.util.Enumeration;
-import java.util.logging.Level;
 import org.apache.log4j.Logger;
 import sun.security.tools.keytool.CertAndKeyGen;
 import sun.security.x509.X500Name;
@@ -330,7 +329,7 @@ public final class StrongBox {
             //recupero la clave privada para generar la nueva entrada
             Key pk = (PrivateKey)keystore.getKey(alias, ksPass);      
             keystore.setKeyEntry(alias, pk, ksPass, certChain);
-            LOG.info("Keystore actualizado: OK");
+            LOG.info("Keystore actualizado: [OK]");
                     
             FileOutputStream fos = new FileOutputStream(keystoreFile);
             keystore.store(fos,ksPass);

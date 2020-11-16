@@ -12,7 +12,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Properties;
 import java.util.Scanner;
-import jdk.nashorn.internal.ir.BreakNode;
 
 import org.apache.log4j.Logger;
 
@@ -43,7 +42,7 @@ public class SIS_autofirmado {
     public static void main(String[] args){
         int userEleccion;
         userEleccion = menu();
-        if (userEleccion == 3){System.exit(0);}
+        if (userEleccion == 3 || userEleccion != 1 || userEleccion != 2 ){System.exit(0);}
          //Gestion archivo de propiedad
         Properties prop = new Properties(System.getProperties());
         try {
@@ -131,7 +130,7 @@ public class SIS_autofirmado {
         Scanner input = new Scanner(System.in);
 
         /***************************************************/
-        System.out.println("Experian :: automatizacion certificado JKS para SIS v1.01");
+        System.out.println("Experian :: automatizacion certificado JKS para SIS v1.5");
         System.out.println("---------------------------------");
         System.out.println("1 - Generar requerimiento a CA");
         System.out.println("2 - Importar certificado firmado");

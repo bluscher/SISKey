@@ -51,15 +51,16 @@ public class Carpeta {
             log.info("ruta archivo y nombre: "+aux.getPath() + " | " + aux.getName());
             return aux;
         }else
-            log.info("No hay certificado en la carpeta input");
+            //log.info("No hay certificado en la carpeta input");
             System.out.println("No hay certificado en la carpeta input");
-            return null;       
+        return null;
+                  
     }
     
     public void listarArchivos(){    
         String[] lista = path.toFile().list();
-        for(int i=0; i<lista.length; i++){
-            System.out.println(lista[i]);
+        for (String lista1 : lista) {
+            System.out.println(lista1);
         }
     }
     
