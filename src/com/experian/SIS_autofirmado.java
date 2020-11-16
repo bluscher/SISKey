@@ -130,7 +130,7 @@ public class SIS_autofirmado {
         Scanner input = new Scanner(System.in);
 
         /***************************************************/
-        System.out.println("Experian :: automatizacion certificado JKS para SIS v1.5");
+        System.out.println("Experian :: automatizacion certificado JKS para SIS v1.1");
         System.out.println("---------------------------------");
         System.out.println("1 - Generar requerimiento a CA");
         System.out.println("2 - Importar certificado firmado");
