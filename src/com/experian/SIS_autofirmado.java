@@ -42,7 +42,8 @@ public class SIS_autofirmado {
     public static void main(String[] args){
         int userEleccion;
         userEleccion = menu();
-        if (userEleccion == 3 || userEleccion != 1 || userEleccion != 2 ){System.exit(0);}
+        if (es_escape(userEleccion)){System.exit(0);}
+        
          //Gestion archivo de propiedad
         Properties prop = new Properties(System.getProperties());
         try {
@@ -139,5 +140,10 @@ public class SIS_autofirmado {
         
         System.out.print("# ");selection = input.nextInt();
         return selection;    
+    }
+     
+    public static boolean es_escape(int entrada){
+        
+        return ((entrada != 1 && entrada != 2) || entrada == 3);
     }
 }
